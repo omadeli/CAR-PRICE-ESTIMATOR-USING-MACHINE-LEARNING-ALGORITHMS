@@ -8,5 +8,6 @@ In the future I will deploy the Machine Learning Model so it's output can be ren
 * Colour of car does not impact price.
 * Mileage impacts price of cars, low mileage results in a higher price while high mileage results in a lower price
 * Old cars with high prices where indetified as vintage/luxurious cars
-* Body type of car moderately affects the price of cars
+* Body type of car moderately affects the price of cars.
+  
 **A technical report can be found among the files above**
