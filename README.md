@@ -4,11 +4,11 @@ The aim of this project is to build a Machine Learning model to predict car pric
 In the future I will deploy the Machine Learning Model so it's output can be rendered in the frontend of an application.
 
 # KEY INSIGHTS
-* Car model and age affects the price of cars postively and negatively
-* Colour of car does not impact price.
-* Mileage impacts price of cars, low mileage results in a higher price while high mileage results in a lower price
-* Old cars with high prices where indetified as vintage/luxurious cars
-* Body type of car moderately affects the price of cars.
+* Car model is a significant predictor of car price
+* Colour of car does not offer any help in predicting car prices
+* Mileage impacts price of cars, low mileage results in a higher price while high mileage results in a lower price.
+* Old cars with high prices where identified as vintage/luxurious cars
+* The make of the car is also a significant predictor of car price 
   
 **A technical report can be found among the files above**
 
