@@ -1,14 +1,14 @@
 # CAR-PRICE-ESTIMATOR-USING-MACHINE-LEARNING-ALGORITHMS
-The aim of this project is to build a Machine Learning model to predict car prices. The dataset is provided by AutoTrader- a well known British automotive online marketplace and classified advertising business.
+The aim of this project was to build a Machine Learning model to predict car prices. The dataset is provided by AutoTrader- a well known British automotive online marketplace and classified advertising business.
 
-In the future I will deploy the Machine Learning Model so it's output can be rendered in the frontend of an application.
+In the future I will deploy the Machine Learning Model so it's output can be rendered in the frontend of a web app.
 
 # KEY INSIGHTS
-* Car model is a significant predictor of car price
-* Colour of car does not offer any help in predicting car prices
+* Car model is a significant predictor of car price.
+* Colour of car does not offer any help in predicting car prices.
 * Mileage impacts price of cars, low mileage results in a higher price while high mileage results in a lower price.
-* Old cars with high prices where identified as vintage/luxurious cars
-* The make of the car is also a significant predictor of car price 
+* Old cars with high prices where identified as vintage/luxurious cars.
+* The make of the car is also a significant predictor of car price.
   
 **A technical report can be found among the files above**
 
