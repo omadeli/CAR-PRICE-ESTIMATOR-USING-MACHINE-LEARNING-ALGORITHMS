@@ -23,8 +23,10 @@ As the mileage of of car increases the price tends to reduce. This is inline wit
 Observing the correlation matrix below, mileage is moderately negatively correlated with price , while the year of registration is positively correlated with price indicating that as year of registration increases price as increases as newer cars will be expected to be more expensive that older cars. The reverse can be said for age
 ![image](https://github.com/user-attachments/assets/44b6a867-8bd7-4d5b-9521-65757203936e)
 
-The variation observed in the mean price of each model of cars indicate that the model of a car has some effect on car prices.
-![image](https://github.com/user-attachments/assets/9fc1c40f-9646-4bf7-b5b1-6d0c2c88cde7)
+The variation observed in the mean price of each model and make of cars indicate that the model of a car has some effect on car prices.
+![image](https://github.com/user-attachments/assets/22d371f8-2cb1-4594-b61b-e7aa534d34bb)
+![image](https://github.com/user-attachments/assets/6e6d519a-d2b8-4eba-9061-49c830354c65)
+
 
 
 # BEST MACHINE LEARNING MODEL
