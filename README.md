@@ -34,6 +34,8 @@ The best perfoming model for this machine learning task was the gradient boostin
 Sequential feature selection was carried out with linear regression specified as the estimator
 ![image](https://github.com/user-attachments/assets/8c24b22a-ab93-42f0-94c5-83dbc2e6ea30)
 
+![image](https://github.com/user-attachments/assets/d6e5b5cc-4788-4902-b855-e32b0ecefaee)
+
 
 # DRILLING DEEPER WITH USING SHAP
 The SHAP summary plot indicates the effect of each feature on the model’s output. Standard_model shows a fairly wide range of impact on predictions, with high values (in red) increasing predictions and lower values (in blue) slightly decreasing them. Age significantly impacts predictions, with higher ages (in red) generally lowering the model's output, while younger ages (in blue) increase it. Mileage has a moderate negative influence, where higher mileage reduces the prediction and lower mileage has a smaller positive effect. Standard_make has a mixed but minor influence, with some specific values contributing slightly to positive predictions. Finally, body_type shows minimal variation, with a very small effect overall on the model’s output
