@@ -15,10 +15,10 @@ In the future I will deploy the Machine Learning Model so it's output can be ren
 # EXPLORATORY DATA ANALYSIS
 ## What affects car prices ?
 We can observe below that the colour of a car might not necessarily affect the price of the car in any significant way. The median price for a colors are all averagely the same.
-![image](https://github.com/user-attachments/assets/822beb57-b221-47bb-9145-182286869b5d)
+![image](https://github.com/user-attachments/assets/b23101d1-25fa-4c86-8ed9-e26b058201fc)
 
 As the mileage of of car increases the price tends to reduce. This is inline with the trend that as a car gets older, its price tends to drop. The exception to this is unless the car is a vintage/luxurious car e.g Buggati.
-![image](https://github.com/user-attachments/assets/d42c6ab0-f087-4dc5-8349-1d1f384540b9)
+![image](https://github.com/user-attachments/assets/23bff01f-4da7-4f41-9c64-a00adbc8181b)
 
 Observing the correlation matrix below, mileage is moderately negatively correlated with price , while the year of registration is positively correlated with price indicating that as year of registration increases price as increases as newer cars will be expected to be more expensive that older cars. The reverse can be said for age
 ![image](https://github.com/user-attachments/assets/44b6a867-8bd7-4d5b-9521-65757203936e)
