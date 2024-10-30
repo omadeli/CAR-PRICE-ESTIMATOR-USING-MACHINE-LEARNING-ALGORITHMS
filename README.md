@@ -34,10 +34,9 @@ The best perfoming model for this machine learning task was the gradient boostin
 Sequential feature selection was carried out with linear regression specified as the estimator
 ![image](https://github.com/user-attachments/assets/8c24b22a-ab93-42f0-94c5-83dbc2e6ea30)
 
-**Train score - 96%**
-**Test score - 95%**
 
 # DRILLING DEEPER WITH USING SHAP
-Using SHAP (SHapley Additive exPlanations) to visualise feature impact of price, we observe that standard model affects price the most. The plot indicates that standard model can a affect car price positively by up to £50,000 and negatively by about £10,000. The standard make is also another discovery, as the plots show that it can affect car price positively almost £40,000 and negatively by £8,000 - £ 9,000
-![image](https://github.com/user-attachments/assets/580a89e0-3f2c-4f28-9d14-7a6e61081f6c)
+The SHAP summary plot indicates the effect of each feature on the model’s output. Standard_model shows a fairly wide range of impact on predictions, with high values (in red) increasing predictions and lower values (in blue) slightly decreasing them. Age significantly impacts predictions, with higher ages (in red) generally lowering the model's output, while younger ages (in blue) increase it. Mileage has a moderate negative influence, where higher mileage reduces the prediction and lower mileage has a smaller positive effect. Standard_make has a mixed but minor influence, with some specific values contributing slightly to positive predictions. Finally, body_type shows minimal variation, with a very small effect overall on the model’s output
+![image](https://github.com/user-attachments/assets/54716ad6-e8d5-4d86-bbfe-21ba50e3c2f3)
+
 
