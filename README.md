@@ -20,10 +20,11 @@ The data cleaning process involved analysis of missing of missing values and out
 ![missing values](https://github.com/user-attachments/assets/0f8e2383-dcdb-4c1d-bf62-712a14e80705)
 * Erroneous value was detected and removed from the reg_code column
 * The year of registration and regcode had over 30K missing values. Over 90% of the missing values were for new vehicles and thus their year of registration was imputed by extracting the year the car advert was published from the public_reference feature. The remaining missing values were imputed  by scraping the corresponding year of registration for their reg_code from wikipedia.
-* EDA was conducted 
-
-
-* The year of registration had the most values
+* The age of the car was then engineered by subtracting year car was published from the year it was registered.
+  
+Descriptive statistics for the numerical features
+![description](https://github.com/user-attachments/assets/fbcbb58e-6f6b-416c-8ab7-a727572f5417)
+* The mileage has a max value of 999999, which is highly impossible. This was analysed further using a boxplot as shown below
 
 # EXPLORATORY DATA ANALYSIS
 ## What affects car prices ?
