@@ -32,7 +32,12 @@ Descriptive statistics for the numerical features
 
 # EXPLORATORY DATA ANALYSIS
 ## What really affects the price of car? 
-Exploring the relationship between year of registration indicates that as the year of registration increases the price reduces
+* Exploring the relationship between year of registration indicates that as the year of registration increases the price reduces. This is an early indication of the year of registration might be a good predictor of car prices
+  ![yor and price](https://github.com/user-attachments/assets/4823a0d4-83db-4068-9ccf-e9812291037f)
+* The colour of a car might not necessarily affect the price of a car too much as inidicated by the distribution of price for each car below. The price range for each colour are not far from each other. Gold though has a wide range while magneta and indigo have a really small range, but considering this colours have little obseration, we can not really conclude. **Black and white are the most popular colours which occur in over 80% of the data and they have similar distribution which is an indication that colour is does not have a strong relationship with the price of car**.
+  ![colour](https://github.com/user-attachments/assets/2312118b-3cc1-4bed-bede-846f2976336c)
+
+
 
 
 # MACHINE LEARNING
