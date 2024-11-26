@@ -1,7 +1,7 @@
 # MACHINE LEARNING MODEL TO PREDICT CAR PRICES
 
 # PROBLEM STATEMENT
-The dataset which contains over 400k rows of car adverts is provided by Autotrader a well known British automotive online marketplace and classified advertising business. Autotrader wants to develop a robust feature on their website that will help a customer value their car (predict the price). The dataset contains the following features publish_reference, year_of_registration, mileage, standard_make, standard_model,body_type,fuel_type, vehicle_condition, and crossover_car_and_van. The main task at hand is to clean, explore and analyse the data to identify the best predictors of the price of cars and also build a machine learning model that can accurately predict the prices
+The dataset which contains over 400k rows of car adverts is provided by Autotrader a well known British automotive online marketplace and classified advertising business. Autotrader wants to develop a robust feature on their website that will help a customer value their car (predict the price). The dataset contains the following features **publish_reference, year_of_registration, mileage, standard_make, standard_model,body_type,fuel_type, vehicle_condition, and crossover_car_and_van**. The main task at hand is to clean, explore and analyse the data to identify the best predictors of the price of cars and also build a machine learning model that can accurately predict the prices
 
 # KEY INSIGHTS FROM ANALYSIS
 * Car model is a significant predictor of car price.
@@ -21,26 +21,18 @@ The data cleaning process involved analysis of missing of missing values and out
 * Erroneous value was detected and removed from the reg_code column
 * The year of registration and regcode had over 30K missing values. Over 90% of the missing values were for new vehicles and thus their year of registration was imputed by extracting the year the car advert was published from the public_reference feature. The remaining missing values were imputed  by scraping the corresponding year of registration for their reg_code from wikipedia.
 * The age of the car was then engineered by subtracting year car was published from the year it was registered.
+* The missing values in body_type, fuel_type, standard_colour will be imputed with the mode in the machine learning preprocessing pipeline  and the mileage will be imputed with the mean as well.
   
 Descriptive statistics for the numerical features
 ![description](https://github.com/user-attachments/assets/fbcbb58e-6f6b-416c-8ab7-a727572f5417)
-* The mileage has a max value of 999999, which is highly impossible. This was analysed further using a boxplot as shown below
+* The mileage has a max value of 999,999miles, which is highly impossible. This was analysed further using a boxplot as shown below
+![mileage](https://github.com/user-attachments/assets/16c2bf74-4c87-4ac5-9cf7-fd9163dc9d64)
+* Mileage was capped at 200k because most of the values above 200k are looking unrealistic and according to an article from caranalytics.com, The typical annual miles of a vehicle is between 10,000 and 15,000 miles which translates to 100k-150k miles per 10years. Capping it at 200k will enable the model to generalise to high values of mileage considering taxis and other heavy use vehicle might hit 150k to 200k miles per 10years
+* The outliers in price are due to the price of luxurious and vinatge cars. Dropping this might reduce the robustness of the Machine Learning model and because we want our model to be able to predict both expensive and less expensive car prices these rows were not dropped
 
 # EXPLORATORY DATA ANALYSIS
-## What affects car prices ?
-We can observe below that the colour of a car might not necessarily affect the price of the car in any significant way. The median price for a colors are all averagely the same.
-![image](https://github.com/user-attachments/assets/b23101d1-25fa-4c86-8ed9-e26b058201fc)
-
-As the mileage of of car increases the price tends to reduce. This is inline with the trend that as a car gets older, its price tends to drop. The exception to this is unless the car is a vintage/luxurious car e.g Buggati.
-![image](https://github.com/user-attachments/assets/23bff01f-4da7-4f41-9c64-a00adbc8181b)
-
-Observing the correlation matrix below, mileage is moderately negatively correlated with price , while the year of registration is positively correlated with price indicating that as year of registration increases price as increases as newer cars will be expected to be more expensive that older cars. The reverse can be said for age
-![image](https://github.com/user-attachments/assets/44b6a867-8bd7-4d5b-9521-65757203936e)
-
-The variation observed in the mean price of each model and make of cars indicate that the model of a car has some effect on car prices.
-![image](https://github.com/user-attachments/assets/22d371f8-2cb1-4594-b61b-e7aa534d34bb)
-![image](https://github.com/user-attachments/assets/6e6d519a-d2b8-4eba-9061-49c830354c65)
-
+## What really affects the price of car? 
+Exploring the relationship between year of registration indicates that as the year of registration increases the price reduces
 
 
 # MACHINE LEARNING
