@@ -16,8 +16,12 @@ The dataset which contains over 400k rows of car adverts is provided by Autotrad
 
 
 # DATA CLEANING
-The data cleaning process involved analysis of missing of missing values and outliers to detect anomality and erronous values.
-![image](https://github.com/user-attachments/assets/d9effd0c-4191-40bc-8d2d-723978c7f421)
+The data cleaning process involved analysis of missing of missing values and outliers to detect anomality and erroneous values.
+![missing values](https://github.com/user-attachments/assets/0f8e2383-dcdb-4c1d-bf62-712a14e80705)
+* Erroneous value was detected and removed from the reg_code column
+* The year of registration and regcode had over 30K missing values. Over 90% of the missing values were for new vehicles and thus their year of registration was imputed by extracting the year the car advert was published from the public_reference feature. The remaining missing values were imputed  by scraping the corresponding year of registration for their reg_code from wikipedia.
+* EDA was conducted 
+
 
 * The year of registration had the most values
 
