@@ -12,6 +12,15 @@ The dataset which contains over 400k rows of car adverts is provided by Autotrad
 
 # BUSINESS RECOMMENDATIONS
 
+
+
+
+# DATA CLEANING
+The data cleaning process involved analysis of missing of missing values and outliers to detect anomality and erronous values.
+![image](https://github.com/user-attachments/assets/d9effd0c-4191-40bc-8d2d-723978c7f421)
+
+* The year of registration had the most values
+
 # EXPLORATORY DATA ANALYSIS
 ## What affects car prices ?
 We can observe below that the colour of a car might not necessarily affect the price of the car in any significant way. The median price for a colors are all averagely the same.
@@ -29,7 +38,7 @@ The variation observed in the mean price of each model and make of cars indicate
 
 
 
-# BEST MACHINE LEARNING MODEL
+# MACHINE LEARNING
 The best perfoming model for this machine learning task was the gradient boosting algorithm. The pipeline for the model can be seen below.
 Sequential feature selection was carried out with linear regression specified as the estimator
 ![image](https://github.com/user-attachments/assets/8c24b22a-ab93-42f0-94c5-83dbc2e6ea30)
@@ -37,7 +46,7 @@ Sequential feature selection was carried out with linear regression specified as
 ![image](https://github.com/user-attachments/assets/d6e5b5cc-4788-4902-b855-e32b0ecefaee)
 
 
-# DRILLING DEEPER WITH USING SHAP
+# DRILLING DEEPER USING SHAP
 The SHAP summary plot indicates the effect of each feature on the model’s output. Standard_model shows a fairly wide range of impact on predictions, with high values (in red) increasing predictions and lower values (in blue) slightly decreasing them. Age significantly impacts predictions, with higher ages (in red) generally lowering the model's output, while younger ages (in blue) increase it. Mileage has a moderate negative influence, where higher mileage reduces the prediction and lower mileage has a smaller positive effect. Standard_make has a mixed but minor influence, with some specific values contributing slightly to positive predictions. Finally, body_type shows minimal variation, with a very small effect overall on the model’s output
 ![image](https://github.com/user-attachments/assets/54716ad6-e8d5-4d86-bbfe-21ba50e3c2f3)
 
