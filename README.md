@@ -1,16 +1,16 @@
 # MACHINE LEARNING MODEL TO PREDICT CAR PRICES
 
 # PROBLEM STATEMENT
-The dataset which contains over 400k rows of car adverts is provided by Autotrader a well known British automotive online marketplace and classified advertising business. Autotrader wants to increase the have a feature on their website that can value a customers car with certain inputs. The dataset contains the following features publish_reference, year_ofOregistration, 
+The dataset which contains over 400k rows of car adverts is provided by Autotrader a well known British automotive online marketplace and classified advertising business. Autotrader wants to develop a robust feature on their website that will help a customer value their car (predict the price). The dataset contains the following features publish_reference, year_of_registration, mileage, standard_make, standard_model,body_type,fuel_type, vehicle_condition, and crossover_car_and_van. The main task at hand is to clean, explore and analyse the data to identify the best predictors of the price of cars and also build a machine learning model that can accurately predict the prices
 
-# KEY INSIGHTS
+# KEY INSIGHTS FROM ANALYSIS
 * Car model is a significant predictor of car price.
 * Colour of car does not offer any help in predicting car prices.
 * Mileage impacts price of cars, low mileage results in a higher price while high mileage results in a lower price.
 * Old cars with high prices where identified as vintage/luxurious cars.
 * The make of the car is also a significant predictor of car price.
-  
-**A technical report can be found among the files above**
+
+# BUSINESS RECOMMENDATIONS
 
 # EXPLORATORY DATA ANALYSIS
 ## What affects car prices ?
