@@ -29,12 +29,13 @@ Descriptive statistics for the numerical features
 # EXPLORATORY DATA ANALYSIS
 ## What really affects the price of car? 
 * Exploring the relationship between year of registration indicates that as the year of registration increases the price reduces. This is an early indication of the year of registration might be a good predictor of car prices
-  ![yor and price](https://github.com/user-attachments/assets/4823a0d4-83db-4068-9ccf-e9812291037f)
+![yor and price](https://github.com/user-attachments/assets/4823a0d4-83db-4068-9ccf-e9812291037f)
 * The colour of a car might not necessarily affect the price of a car too much as inidicated by the distribution of price for each car below. The price range for each colour are not far from each other. Gold though has a wide range while magneta and indigo have a really small range, but considering this colours have little obseration, we can not really conclude. **Black and white are the most popular colours which occur in over 80% of the data and they have similar distribution which is an indication that colour is does not have a strong relationship with the price of car**.
-  ![colour](https://github.com/user-attachments/assets/2312118b-3cc1-4bed-bede-846f2976336c)
+![colour](https://github.com/user-attachments/assets/2312118b-3cc1-4bed-bede-846f2976336c)
 
 * Sampling the mean price for each make and model of a car indicates that they are good predictors of the price of car due to the variation observed as shown in the plots below
 ![standard model](https://github.com/user-attachments/assets/59817174-f64d-47e3-ad78-36fc0ef1d04d)
+
 ![standard make](https://github.com/user-attachments/assets/44c2d188-d755-420b-9ef2-cc92b6967090)
 
 *Exploring body type we can observe that the distribution of price varies for each body type but not by much except in some few cases, for example Limousine
@@ -47,11 +48,11 @@ Descriptive statistics for the numerical features
 
 
 # MACHINE LEARNING
-The best perfoming model for this machine learning task was the gradient boosting algorithm. The pipeline for the model can be seen below.
-Sequential feature selection was carried out with linear regression specified as the estimator
-![image](https://github.com/user-attachments/assets/8c24b22a-ab93-42f0-94c5-83dbc2e6ea30)
-
-![image](https://github.com/user-attachments/assets/d6e5b5cc-4788-4902-b855-e32b0ecefaee)
+The following preprocessing steps were carried out to prepare the data for machine learning.
+* Imputation of missing values using mean for numerical features and mode for categorical features.
+* A custom class was created to group low frequency cateogories in high cardinality features such as the standard_make and standard_model.
+* Target encoding was carried out to encode the categorical variables.
+* Features were scaled for linear models but was not scaled for tree based models - scaling for tree based models has little to no effect on performance and is not neccessary
 
 
 # DRILLING DEEPER USING SHAP
