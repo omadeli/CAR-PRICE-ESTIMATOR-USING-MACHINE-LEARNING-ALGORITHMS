@@ -53,10 +53,13 @@ The following preprocessing steps were carried out to prepare the data for machi
 * A custom class was created to group low frequency cateogories in high cardinality features such as the standard_make and standard_model.
 * Target encoding was carried out to encode the categorical variables.
 * Features were scaled for linear models but was not scaled for tree based models - scaling for tree based models has little to no effect on performance and is not neccessary
+* Sequential Feature Selection was carried out to select best features. The selection process returned **year of registration, mileage, standard_make and standard_model**
+ as best predictors of car price.
 
+Experiments were carried out with Linear Regression, Random Forest, Gradient Boosting and an ensemble model of Random Forest and Gradient Boosting.
+
+# BEST MACHINE LEARNING MODEL
 
 # DRILLING DEEPER USING SHAP
-The SHAP summary plot indicates the effect of each feature on the model’s output. Standard_model shows a fairly wide range of impact on predictions, with high values (in red) increasing predictions and lower values (in blue) slightly decreasing them. Age significantly impacts predictions, with higher ages (in red) generally lowering the model's output, while younger ages (in blue) increase it. Mileage has a moderate negative influence, where higher mileage reduces the prediction and lower mileage has a smaller positive effect. Standard_make has a mixed but minor influence, with some specific values contributing slightly to positive predictions. Finally, body_type shows minimal variation, with a very small effect overall on the model’s output
-![image](https://github.com/user-attachments/assets/54716ad6-e8d5-4d86-bbfe-21ba50e3c2f3)
 
 
