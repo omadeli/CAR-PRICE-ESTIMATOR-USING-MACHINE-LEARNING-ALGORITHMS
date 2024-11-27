@@ -4,7 +4,9 @@
 The dataset which contains over 400k rows of car adverts is provided by Autotrader a well known British automotive online marketplace and classified advertising business. Autotrader wants to develop a robust feature on their website that will help a customer value their car (predict the price). The dataset contains the following features **publish_reference, year_of_registration, mileage, standard_make, standard_model,body_type,fuel_type, vehicle_condition, and crossover_car_and_van**. The main task at hand is to clean, explore and analyse the data to identify the best predictors of the price of cars and also build a machine learning model that can accurately predict the prices
 
 # KEY INSIGHTS FROM ANALYSIS
-
+*The best machine leaarning for that fit the data with 92% accuracy was the Gradient Boosting model
+*The MAE(mean absolute error) of the gradient boosting mmodel was 2756.51 meaning that on average our predictions are off by £2765.51
+*Using sequential feature selection, year of registration, mileage, model of car and make of car were the best predictors of price of car
 
 # BUSINESS RECOMMENDATIONS
 
@@ -56,10 +58,19 @@ The following preprocessing steps were carried out to prepare the data for machi
 * Sequential Feature Selection was carried out to select best features. The selection process returned **year of registration, mileage, standard_make and standard_model**
  as best predictors of car price.
 
+Pipeline can be seen below
+![gbr pipe](https://github.com/user-attachments/assets/d5b7af17-b13b-416f-9627-3be7ca58d524)
+
 Experiments were carried out with Linear Regression, Random Forest, Gradient Boosting and an ensemble model of Random Forest and Gradient Boosting.
 
 # BEST MACHINE LEARNING MODEL
+![results](https://github.com/user-attachments/assets/a5f9077f-2de4-423d-bb7d-80f352589310)
+The **MAE (Mean absolute error) and rsquared metric** was used to measure the accuracy of the model.The linear regression model underfits. The random forest and gradient boosting models fits the data well and generalise to new data just fine with an MAE and rsquared of £2933.39, 91% and £2756.59, 92% respectively. An ensemble of both tree models results in MAE of £2794 indicating that the ensembling of both the random forest and gradient boost models results in a reduction of the MAE from the gradient boosting model. Thus the gradient boosting model will be the choosen as the best model
+
+Visualing the gradient boosting model's peformance
+![gbr ](https://github.com/user-attachments/assets/4539383c-0a6f-4c69-b5ca-f220400cf041)
 
 # DRILLING DEEPER USING SHAP
+![shap](https://github.com/user-attachments/assets/ce91743e-0d2e-46d5-81b9-f0dd33b5f3aa)
 
 
