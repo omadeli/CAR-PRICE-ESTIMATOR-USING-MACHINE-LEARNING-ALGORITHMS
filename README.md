@@ -4,13 +4,13 @@
 The dataset which contains over 400k rows of car adverts is provided by Autotrader a well known British automotive online marketplace and classified advertising business. Autotrader wants to develop a robust feature on their website that will help a customer value their car (predict the price). The dataset contains the following features **publish_reference, year_of_registration, mileage, standard_make, standard_model,body_type,fuel_type, vehicle_condition, and crossover_car_and_van**. The main task at hand is to clean, explore and analyse the data to identify the best predictors of the price of cars and also build a machine learning model that can accurately predict the prices
 
 # KEY INSIGHTS FROM ANALYSIS
-*The best machine leaarning for that fit the data with 92% accuracy was the Gradient Boosting model
-*The MAE(mean absolute error) of the gradient boosting mmodel was 2756.51 meaning that on average our predictions are off by £2765.51
-*Using sequential feature selection, year of registration, mileage, model of car and make of car were the best predictors of price of car
+*The best machine leaarning for that fit the data with **92%** accuracy was the Gradient Boosting model
+*The MAE(mean absolute error) of the gradient boosting model was 2756.51 meaning that on average our predictions are off by £2765.51
+*Using sequential feature selection,**year of registration, mileage, model of car and make of car** were the best predictors of price of car
 
-# BUSINESS RECOMMENDATIONS
-
-
+# BUSINESS RECOMMENDATION
+* The input fields on the website's forms should use dropdowns with auto-suggestions or auto-completion to minimize errors from customer entries
+* Customer feedback should be collected to determine if they feel the valuation provided is accurate and satisfactory. This can be implemented by redirecting customers to a brief form (to minimize bounce rates), featuring a dropdown with options such as 'Satisfied' and 'Not Satisfied,' along with an optional text field for additional comments..  
 
 
 # DATA CLEANING
@@ -29,7 +29,7 @@ Descriptive statistics for the numerical features
 * The outliers in price are due to the price of luxurious and vinatge cars. Dropping this might reduce the robustness of the Machine Learning model and because we want our model to be able to predict both expensive and less expensive car prices these rows were not dropped
 
 # EXPLORATORY DATA ANALYSIS
-## What really affects the price of car? 
+## What really affects the price of acar? 
 * Exploring the relationship between year of registration indicates that as the year of registration increases the price reduces. This is an early indication of the year of registration might be a good predictor of car prices
 ![yor and price](https://github.com/user-attachments/assets/4823a0d4-83db-4068-9ccf-e9812291037f)
 * The colour of a car might not necessarily affect the price of a car too much as inidicated by the distribution of price for each car below. The price range for each colour are not far from each other. Gold though has a wide range while magneta and indigo have a really small range, but considering this colours have little obseration, we can not really conclude. **Black and white are the most popular colours which occur in over 80% of the data and they have similar distribution which is an indication that colour is does not have a strong relationship with the price of car**.
