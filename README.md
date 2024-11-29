@@ -36,9 +36,10 @@ Descriptive statistics for the numerical features
 ![colour](https://github.com/user-attachments/assets/2312118b-3cc1-4bed-bede-846f2976336c)
 
 * Sampling the mean price for each make and model of a car indicates that they are good predictors of the price of car due to the variation observed as shown in the plots below
-![standard model](https://github.com/user-attachments/assets/59817174-f64d-47e3-ad78-36fc0ef1d04d)
 
-![standard make](https://github.com/user-attachments/assets/44c2d188-d755-420b-9ef2-cc92b6967090)
+* ![standard model](https://github.com/user-attachments/assets/59817174-f64d-47e3-ad78-36fc0ef1d04d)
+
+* ![standard make](https://github.com/user-attachments/assets/44c2d188-d755-420b-9ef2-cc92b6967090)
 
 *Exploring body type we can observe that the distribution of price varies for each body type but not by much except in some few cases, for example Limousine
 ![body_type](https://github.com/user-attachments/assets/db996206-db32-4471-8162-02fc29037cb4)
