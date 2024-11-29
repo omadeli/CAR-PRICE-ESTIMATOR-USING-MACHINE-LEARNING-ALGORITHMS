@@ -37,14 +37,13 @@ Descriptive statistics for the numerical features
 
 * Sampling the mean price for each make and model of a car indicates that they are good predictors of the price of car due to the variation observed as shown in the plots below
 
-* ![standard model](https://github.com/user-attachments/assets/59817174-f64d-47e3-ad78-36fc0ef1d04d)
+![standard model](https://github.com/user-attachments/assets/59817174-f64d-47e3-ad78-36fc0ef1d04d)
+![standard make](https://github.com/user-attachments/assets/44c2d188-d755-420b-9ef2-cc92b6967090)
 
-* ![standard make](https://github.com/user-attachments/assets/44c2d188-d755-420b-9ef2-cc92b6967090)
-
-*Exploring body type we can observe that the distribution of price varies for each body type but not by much except in some few cases, for example Limousine
+* Exploring body type we can observe that the distribution of price varies for each body type but not by much except in some few cases, for example Limousine
 ![body_type](https://github.com/user-attachments/assets/db996206-db32-4471-8162-02fc29037cb4)
 
-*Exploring the distribution of price for each fuel type we observe that petrol and diesel cars have very similar distribution and considering the occur in over 80% of the data, the fuel type might not have a strong enough relationship with price but it also worth noting that the Petrol plug-in hybrid and diesel hybrid fuel type are on the high side of price.
+* Exploring the distribution of price for each fuel type we observe that petrol and diesel cars have very similar distribution and considering the occur in over 80% of the data, the fuel type might not have a strong enough relationship with price but it also worth noting that the Petrol plug-in hybrid and diesel hybrid fuel type are on the high side of price.
 ![fuel type](https://github.com/user-attachments/assets/d53ceff7-ea4e-4d95-9892-95b88ca63169)
 
 * Vehicle condition was dropped due to the fact that over 93% of the dataset contained old cars and thus this feature was dropped due to the high level of imbalance.
