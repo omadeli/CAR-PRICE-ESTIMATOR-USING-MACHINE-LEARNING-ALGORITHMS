@@ -4,7 +4,7 @@
 The dataset which contains over 400k rows of car adverts is provided by Autotrader a well known British automotive online marketplace and classified advertising business. Autotrader wants to develop a robust feature on their website that will help a customer value their car (predict the price). The dataset contains the following features **publish_reference, year_of_registration, mileage, standard_make, standard_model,body_type,fuel_type, vehicle_condition, and crossover_car_and_van**. The main task at hand is to clean, explore and analyse the data to identify the best predictors of the price of cars and also build a machine learning model that can accurately predict the prices
 
 # KEY INSIGHTS FROM ANALYSIS
-* The best machine leaarning for that fit the data with **92%** accuracy was the Gradient Boosting model
+* The best machine learning model that fit the data with **92%** accuracy was the Gradient Boosting model.
 * The MAE(mean absolute error) of the gradient boosting model was 2756.51 meaning that on average our predictions are off by £2765.51
 * Using sequential feature selection,**year of registration, mileage, model of car and make of car** were the best predictors of price of car
 
