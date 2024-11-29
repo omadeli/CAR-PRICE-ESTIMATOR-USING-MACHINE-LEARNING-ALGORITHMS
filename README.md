@@ -6,7 +6,7 @@ The dataset which contains over 400k rows of car adverts is provided by Autotrad
 # KEY INSIGHTS FROM ANALYSIS
 * The best machine leaarning for that fit the data with **92%** accuracy was the Gradient Boosting model
 * The MAE(mean absolute error) of the gradient boosting model was 2756.51 meaning that on average our predictions are off by £2765.51
-*Using sequential feature selection,**year of registration, mileage, model of car and make of car** were the best predictors of price of car
+* Using sequential feature selection,**year of registration, mileage, model of car and make of car** were the best predictors of price of car
 
 # BUSINESS RECOMMENDATION
 * The input fields on the website's forms should use dropdowns with auto-suggestions or auto-completion to minimize errors from customer entries
