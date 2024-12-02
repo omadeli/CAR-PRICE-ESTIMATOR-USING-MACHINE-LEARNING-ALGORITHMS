@@ -1,5 +1,3 @@
-# MACHINE LEARNING MODEL TO PREDICT CAR PRICES
-
 # PROBLEM STATEMENT
 The dataset which contains over 400k rows of car adverts is provided by Autotrader a well known British automotive online marketplace and classified advertising business. Autotrader wants to develop a robust feature on their website that will help a customer value their car (predict the price). The dataset contains the following features **publish_reference, year_of_registration, mileage, standard_make, standard_model,body_type,fuel_type, vehicle_condition, and crossover_car_and_van**. The main task at hand is to clean, explore and analyse the data to identify the best predictors of the price of cars and also build a machine learning model that can accurately predict the prices
 
